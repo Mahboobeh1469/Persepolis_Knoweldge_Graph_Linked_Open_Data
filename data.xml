@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="persepolis_project">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Persepolis: a Linked Open Data project (20-entity edition)</title>
+                <author>Student project for the course Information Science and Cultural Heritage (a.y. 2025-2026), DHDK, University of Bologna</author>
+                <respStmt>
+                    <resp>Encoding and modelling</resp>
+                    <name>Student project, Alma Mater Studiorum - Università di Bologna</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Student assignment - not for distribution</publisher>
+                <date when="2026-07-09"/>
+                <availability status="restricted">
+                    <p>Produced for educational purposes as part of a university course assignment.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl xml:id="wiki_persepolis">
+                    Adapted and rewritten from the English Wikipedia article
+                    <ref target="https://en.wikipedia.org/wiki/Persepolis">Persepolis</ref>,
+                    consulted July 2026, available under the Creative Commons Attribution-ShareAlike License.
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>This file encodes a short descriptive text about Persepolis and marks up the
+                twenty entities selected for the project's theoretical and conceptual models:
+                people, places, organizations, monuments, an empire, a religion, a language and a
+                document archive. Each entity is described once in the <gi>standOff</gi> section
+                and referenced from the running text through the <att>ref</att> attribute,
+                following TEI Guidelines recommendations for named-entity annotation
+                (<gi>listPerson</gi>, <gi>listPlace</gi>, <gi>listOrg</gi>, <gi>listEvent</gi>,
+                <gi>listRelation</gi>). Every entity is reconciled to Wikidata; QIDs were verified
+                individually against live Wikidata pages, not generated from memory.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+
+    <standOff>
+        <!-- ================= PLACES ================= -->
+        <listPlace>
+            <place xml:id="persepolis">
+                <placeName>Persepolis</placeName>
+                <desc>Archaeological site and ceremonial capital of the Achaemenid Empire.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q129072</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Persepolis</idno>
+            </place>
+            <place xml:id="pasargadae">
+                <placeName>Pasargadae</placeName>
+                <desc>First dynastic capital of the Achaemenid Empire, founded by Cyrus the Great.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q230025</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Pasargadae</idno>
+            </place>
+            <place xml:id="naqshe_rustam">
+                <placeName>Naqsh-e Rustam</placeName>
+                <desc>Ancient necropolis near Persepolis containing the rock-cut tombs of Achaemenid kings.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q648705</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Naqsh-e_Rustam</idno>
+            </place>
+            <place xml:id="fars">
+                <placeName>Fars Province</placeName>
+                <desc>Province of southern Iran in which Persepolis is located.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q1004666</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Fars_Province</idno>
+            </place>
+            <place xml:id="marvdasht">
+                <placeName>Marvdasht</placeName>
+                <desc>Modern Iranian city near the ruins of Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q604990</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Marvdasht</idno>
+            </place>
+        </listPlace>
+
+        <!-- ================= PERSONS ================= -->
+        <listPerson>
+            <person xml:id="cyrus">
+                <persName>Cyrus the Great</persName>
+                <desc>Founder of the Achaemenid Empire; built Pasargadae.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q8423</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Cyrus_the_Great</idno>
+            </person>
+            <person xml:id="darius">
+                <persName>Darius the Great</persName>
+                <desc>Achaemenid king who founded Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q44387</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Darius_the_Great</idno>
+            </person>
+            <person xml:id="xerxes">
+                <persName>Xerxes I</persName>
+                <desc>Son of Darius; continued and expanded the construction of Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q129165</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Xerxes_I</idno>
+            </person>
+            <person xml:id="alexander">
+                <persName>Alexander the Great</persName>
+                <desc>King of Macedon who conquered and burned Persepolis in 330 BCE.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q8409</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Alexander_the_Great</idno>
+            </person>
+            <person xml:id="herzfeld">
+                <persName>Ernst Herzfeld</persName>
+                <desc>German archaeologist who began the systematic excavation of Persepolis in 1931.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q62933</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Ernst_Herzfeld</idno>
+            </person>
+            <person xml:id="schmidt">
+                <persName>Erich Schmidt</persName>
+                <desc>German-American archaeologist who succeeded Herzfeld as excavation director, 1934-1939.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q71601</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Erich_Schmidt_(archaeologist)</idno>
+            </person>
+        </listPerson>
+
+        <!-- ================= ORGANIZATIONS ================= -->
+        <listOrg>
+            <org xml:id="achaemenid" type="empire">
+                <orgName>Achaemenid Empire</orgName>
+                <desc>Historical Persian empire of which Persepolis was the ceremonial capital.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q389688</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Achaemenid_Empire</idno>
+            </org>
+            <org xml:id="unesco" type="institution">
+                <orgName>UNESCO</orgName>
+                <desc>United Nations agency that inscribed Persepolis on the World Heritage List in 1979.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q7809</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/UNESCO</idno>
+            </org>
+            <org xml:id="isac" type="institution">
+                <orgName>Institute for the Study of Ancient Cultures</orgName>
+                <desc>University of Chicago research institute (formerly the Oriental Institute) that sponsored the 1931-1939 Persepolis excavations.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q1276053</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Oriental_Institute_(Chicago)</idno>
+            </org>
+        </listOrg>
+
+        <!-- ================= MONUMENTS ================= -->
+        <list type="monuments" xml:id="monuments">
+            <item xml:id="apadana" type="Palace / Audience Hall">
+                <name>Apadana</name>
+                <desc>Great audience hall of Persepolis, begun by Darius and completed by Xerxes I.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q5961812</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Apadana</idno>
+            </item>
+            <item xml:id="gate_of_all_nations" type="Monumental Gate">
+                <name>Gate of All Nations</name>
+                <desc>Monumental entrance hall built by Xerxes I at Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q5527015</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Gate_of_All_Nations</idno>
+            </item>
+            <item xml:id="tachara" type="Palace">
+                <name>Tachara</name>
+                <desc>Private palace of Darius the Great at Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q6564498</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Tachara</idno>
+            </item>
+        </list>
+
+        <!-- ================= CONCEPTS (religion, language) ================= -->
+        <list type="concepts" xml:id="concepts">
+            <item xml:id="zoroastrianism">
+                <name>Zoroastrianism</name>
+                <desc>Ancient Iranian religion practiced by the Achaemenid kings; its iconography appears throughout Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q9601</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Zoroastrianism</idno>
+            </item>
+            <item xml:id="old_persian">
+                <name>Old Persian</name>
+                <desc>Language of the Achaemenid royal inscriptions found at Persepolis.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q35225</idno>
+                <idno type="wikipedia">https://en.wikipedia.org/wiki/Old_Persian</idno>
+            </item>
+        </list>
+
+        <!-- ================= BIBLIOGRAPHY / DOCUMENTS ================= -->
+        <listBibl>
+            <bibl xml:id="fortification_archive">
+                <title>Persepolis Administrative Archives (Fortification Tablets)</title>
+                <desc>Clay tablet archive documenting the daily administration of the Achaemenid Empire, discovered at Persepolis by Ernst Herzfeld.</desc>
+                <idno type="wikidata">https://www.wikidata.org/wiki/Q3752162</idno>
+                <ref target="https://en.wikipedia.org/wiki/Persepolis_Administrative_Archives"/>
+            </bibl>
+            <bibl xml:id="wiki_persepolis_ref">
+                <title>Persepolis</title>
+                <title level="m">Wikipedia, The Free Encyclopedia</title>
+                <ref target="https://en.wikipedia.org/wiki/Persepolis"/>
+            </bibl>
+        </listBibl>
+
+        <!-- ================= EVENTS ================= -->
+        <listEvent>
+            <event xml:id="foundation" when="-0518" who="#darius">
+                <label>Foundation of Persepolis</label>
+                <desc>Persepolis is founded by Darius the Great, 518 BCE.</desc>
+            </event>
+            <event xml:id="destruction" when="-0330" who="#alexander">
+                <label>Destruction of Persepolis</label>
+                <desc>Persepolis is captured and burned by Alexander the Great, 330 BCE.</desc>
+            </event>
+            <event xml:id="excavation" when="1931" who="#herzfeld #schmidt #isac">
+                <label>Persepolis excavation</label>
+                <desc>Systematic excavation begun by Ernst Herzfeld in 1931, continued by Erich Schmidt from 1934 to 1939, sponsored by the Institute for the Study of Ancient Cultures.</desc>
+            </event>
+            <event xml:id="inscription" when="1979" who="#unesco">
+                <label>UNESCO World Heritage inscription</label>
+                <desc>Persepolis is inscribed on the UNESCO World Heritage List, 1979 CE.</desc>
+            </event>
+        </listEvent>
+
+        <!-- ================= RELATIONS (theoretical model, formalized) =================
+             Predicate naming follows an agent-first convention where an agent performs an
+             action (e.g. UNESCO recognizes Persepolis, not the reverse). -->
+        <listRelation>
+            <relation name="builtBy" active="#persepolis" passive="#darius" ref="#foundation"/>
+            <relation name="expandedBy" active="#persepolis" passive="#xerxes" ref="#foundation"/>
+            <relation name="destroyedBy" active="#persepolis" passive="#alexander" ref="#destruction"/>
+            <relation name="capitalOf" active="#persepolis" passive="#achaemenid"/>
+            <relation name="locatedIn" active="#persepolis" passive="#fars"/>
+            <relation name="locatedNear" active="#persepolis" passive="#marvdasht"/>
+            <relation name="locatedIn" active="#marvdasht" passive="#fars"/>
+            <relation name="hasComponent" active="#persepolis" passive="#apadana"/>
+            <relation name="hasComponent" active="#persepolis" passive="#gate_of_all_nations"/>
+            <relation name="hasComponent" active="#persepolis" passive="#tachara"/>
+            <relation name="builtBy" active="#apadana" passive="#darius"/>
+            <relation name="completedBy" active="#apadana" passive="#xerxes"/>
+            <relation name="builtBy" active="#gate_of_all_nations" passive="#xerxes"/>
+            <relation name="builtBy" active="#tachara" passive="#darius"/>
+            <relation name="recognizes" active="#unesco" passive="#persepolis" ref="#inscription"/>
+            <relation name="foundedBy" active="#achaemenid" passive="#cyrus"/>
+            <relation name="builtBy" active="#pasargadae" passive="#cyrus"/>
+            <relation name="capitalOf" active="#pasargadae" passive="#achaemenid"/>
+            <relation name="succeeds" active="#persepolis" passive="#pasargadae"/>
+            <relation name="locatedNear" active="#naqshe_rustam" passive="#persepolis"/>
+            <relation name="containsTomb" active="#naqshe_rustam" passive="#darius"/>
+            <relation name="containsTomb" active="#naqshe_rustam" passive="#xerxes"/>
+            <relation name="excavatedBy" active="#persepolis" passive="#herzfeld" ref="#excavation"/>
+            <relation name="excavatedBy" active="#persepolis" passive="#schmidt" ref="#excavation"/>
+            <relation name="succeededExcavationOf" active="#schmidt" passive="#herzfeld"/>
+            <relation name="conductedExcavationAt" active="#isac" passive="#persepolis" ref="#excavation"/>
+            <relation name="associatedWithReligion" active="#persepolis" passive="#zoroastrianism"/>
+            <relation name="hasLanguage" active="#persepolis" passive="#old_persian"/>
+            <relation name="yieldedArchive" active="#persepolis" passive="#fortification_archive"/>
+            <relation name="discoveredBy" active="#fortification_archive" passive="#herzfeld" ref="#excavation"/>
+        </listRelation>
+    </standOff>
+
+    <text>
+        <body>
+            <div type="entry" xml:id="main_text">
+                <head>Persepolis</head>
+                <p>
+                    <placeName ref="#persepolis">Persepolis</placeName> was the ceremonial capital of the
+                    <orgName ref="#achaemenid">Achaemenid Empire</orgName>, founded by
+                    <persName ref="#cyrus">Cyrus the Great</persName> and built as a monumental
+                    complex by <persName ref="#darius">Darius the Great</persName> beginning in
+                    518 BCE, in what is today <placeName ref="#fars">Fars Province</placeName>, near
+                    the modern city of <placeName ref="#marvdasht">Marvdasht</placeName>. Before
+                    Darius chose this site, the Achaemenid kings ruled from
+                    <placeName ref="#pasargadae">Pasargadae</placeName>, the empire's first capital,
+                    which Cyrus had built roughly forty kilometres to the northeast. Darius
+                    commissioned the site's grandest buildings, including the
+                    <name ref="#tachara">Tachara</name>, his private palace, and began the
+                    <name ref="#apadana">Apadana</name>, the great audience hall, which his son and
+                    successor <persName ref="#xerxes">Xerxes I</persName> completed and further
+                    expanded with the construction of the
+                    <name ref="#gate_of_all_nations">Gate of All Nations</name>. The kings whose
+                    likenesses appear throughout the site practiced
+                    <name ref="#zoroastrianism">Zoroastrianism</name>, and the trilingual royal
+                    inscriptions carved into its walls, written partly in
+                    <name ref="#old_persian">Old Persian</name>, represent some of the earliest
+                    deciphered examples of that language. Nearby, at
+                    <placeName ref="#naqshe_rustam">Naqsh-e Rustam</placeName>, the tombs of Darius
+                    and Xerxes were cut into a cliff face overlooking the plain. In 330 BCE,
+                    <persName ref="#alexander">Alexander the Great</persName> captured and burned
+                    Persepolis during his conquest of the Achaemenid Empire, effectively ending
+                    organized Persian resistance in the region. The ruins lay largely unexcavated
+                    until the twentieth century, when the German archaeologist
+                    <persName ref="#herzfeld">Ernst Herzfeld</persName> began systematic
+                    excavations in 1931 on behalf of the
+                    <orgName ref="#isac">Institute for the Study of Ancient Cultures</orgName> at
+                    the University of Chicago; Herzfeld's team uncovered the
+                    <name ref="#fortification_archive">Persepolis Administrative Archives</name>, a
+                    collection of clay tablets documenting the empire's daily administration.
+                    Herzfeld was succeeded as expedition director by
+                    <persName ref="#schmidt">Erich Schmidt</persName> in 1934, who continued the
+                    excavations until 1939. In recognition of its outstanding cultural value,
+                    <orgName ref="#unesco">UNESCO</orgName> inscribed Persepolis on the World
+                    Heritage List in 1979
+                    <ref target="#wiki_persepolis_ref" type="citation">(Wikipedia contributors)</ref>.
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

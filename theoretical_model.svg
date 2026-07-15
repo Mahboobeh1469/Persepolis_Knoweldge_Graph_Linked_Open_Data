@@ -1,0 +1,201 @@
+<svg viewBox="0 0 1650 1560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+<rect width="1650" height="1560" fill="#fbf9f5"/>
+<text x="825" y="34" text-anchor="middle" font-size="24" font-weight="bold" fill="#5a3d1a">Theoretical model — Persepolis (20 entities)</text>
+<text x="825" y="56" text-anchor="middle" font-size="13" fill="#6b6255" font-style="italic">Informal entity-relationship map — natural-language stage, before ontology formalization</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5a4530"/></marker><marker id="arrowd" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#9a9a9a"/></marker><marker id="arrowe" markerWidth="8" markerHeight="8" refX="6" refY="2.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,5 L7,2.5 z" fill="#b0b0b0"/></marker></defs>
+<line x1="820.0" y1="760.0" x2="979.1" y2="296.5" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="877.0" y="519.3" width="45.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="899.6" y="530.3" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">builtBy</text>
+<line x1="820.0" y1="760.0" x2="1121.0" y2="373.3" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="939.5" y="557.7" width="62.0" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="970.5" y="568.7" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">expandedBy</text>
+<line x1="820.0" y1="760.0" x2="1230.2" y2="492.0" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="991.3" y="617.0" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1025.1" y="628.0" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">destroyedBy</text>
+<line x1="820.0" y1="760.0" x2="1295.0" y2="639.7" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="1029.3" y="690.9" width="56.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1057.5" y="701.9" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">capitalOf</text>
+<line x1="820.0" y1="760.0" x2="1180.5" y2="1091.9" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="972.1" y="916.9" width="56.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1000.3" y="927.9" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">locatedIn</text>
+<line x1="820.0" y1="760.0" x2="1053.2" y2="1190.9" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="902.8" y="966.5" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="936.6" y="977.5" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">locatedNear</text>
+<path d="M1053.2,1190.9 Q1141.4,1173.0 1180.5,1091.9" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="1102.2" y="1149.8" width="56.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1130.4" y="1160.8" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">locatedIn</text>
+<line x1="820.0" y1="760.0" x2="586.8" y2="1190.9" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="666.8" y="966.5" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="703.4" y="977.5" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">hasComponent</text>
+<line x1="820.0" y1="760.0" x2="459.5" y2="1091.9" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="603.1" y="916.9" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="639.7" y="927.9" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">hasComponent</text>
+<line x1="820.0" y1="760.0" x2="371.3" y2="956.8" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="559.0" y="849.4" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="595.6" y="860.4" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">hasComponent</text>
+<path d="M586.8,1190.9 Q718.8,715.6 979.1,296.5" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="725.1" y="719.3" width="45.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="747.7" y="730.3" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">builtBy</text>
+<path d="M586.8,1190.9 Q812.0,754.8 1121.0,373.3" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="797.1" y="758.1" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="830.9" y="769.1" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">completedBy</text>
+<path d="M459.5,1091.9 Q834.4,773.2 1121.0,373.3" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="791.9" y="745.9" width="45.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="814.5" y="756.9" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">builtBy</text>
+<path d="M371.3,956.8 Q726.7,674.1 979.1,296.5" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="680.9" y="643.8" width="45.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="703.5" y="654.8" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">builtBy</text>
+<line x1="1308.3" y1="800.5" x2="820.0" y2="760.0" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="1033.2" y="771.2" width="62.0" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1064.2" y="782.2" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">recognizes</text>
+<path d="M1295.0,639.7 Q1036.0,482.5 820.0,270.0" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="1017.5" y="461.0" width="56.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1045.7" y="472.0" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">foundedBy</text>
+<path d="M900.7,1243.3 Q815.5,760.4 820.0,270.0" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="813.1" y="749.7" width="45.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="835.7" y="760.7" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">builtBy</text>
+<path d="M900.7,1243.3 Q1143.9,971.6 1295.0,639.7" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="1095.0" y="949.1" width="56.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1123.2" y="960.1" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">capitalOf</text>
+<line x1="820.0" y1="760.0" x2="900.7" y2="1243.3" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="834.9" y="992.7" width="50.8" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="860.3" y="1003.7" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">succeeds</text>
+<line x1="739.3" y1="1243.3" x2="820.0" y2="760.0" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="745.9" y="992.7" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="779.7" y="1003.7" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">locatedNear</text>
+<path d="M739.3,1243.3 Q801.1,755.2 979.1,296.5" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="790.6" y="752.8" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="827.2" y="763.8" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">containsTomb</text>
+<path d="M739.3,1243.3 Q893.5,792.3 1121.0,373.3" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="873.4" y="790.5" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="910.0" y="801.5" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">containsTomb</text>
+<line x1="820.0" y1="760.0" x2="519.0" y2="373.3" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="635.7" y="557.7" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="669.5" y="568.7" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">excavatedBy</text>
+<line x1="820.0" y1="760.0" x2="660.9" y2="296.5" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="706.6" y="519.3" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="740.4" y="530.3" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">excavatedBy</text>
+<path d="M660.9,296.5 Q573.3,304.2 519.0,373.3" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="519.0" y="309.0" width="123.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="580.8" y="320.0" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">succeededExcavationOf</text>
+<line x1="1268.7" y1="956.8" x2="820.0" y2="760.0" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="982.6" y="849.4" width="123.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="1044.4" y="860.4" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">conductedExcavationAt</text>
+<line x1="820.0" y1="760.0" x2="331.7" y2="800.5" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="511.2" y="771.2" width="129.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="575.8" y="782.2" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">associatedWithReligion</text>
+<line x1="820.0" y1="760.0" x2="345.0" y2="639.7" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="548.7" y="690.9" width="67.6" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="582.5" y="701.9" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">hasLanguage</text>
+<line x1="820.0" y1="760.0" x2="409.8" y2="492.0" stroke="#5a4530" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="572.7" y="617.0" width="84.4" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="614.9" y="628.0" text-anchor="middle" font-size="9.8" fill="#5a4530" font-style="italic">yieldedArchive</text>
+<path d="M409.8,492.0 Q438.7,409.0 519.0,373.3" fill="none" stroke="#9a9a9a" stroke-width="1.4" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<rect x="413.6" y="410.6" width="73.2" height="13" fill="#fbf9f5" opacity="0.92"/>
+<text x="450.2" y="421.6" text-anchor="middle" font-size="9.8" fill="#9a9a9a" font-style="italic">discoveredBy</text>
+<line x1="979.1" y1="296.5" x2="1024.6" y2="164.1" stroke="#b0b0b0" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrowe)"/>
+<line x1="1230.2" y1="492.0" x2="1347.4" y2="415.4" stroke="#b0b0b0" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrowe)"/>
+<line x1="660.9" y1="296.5" x2="615.4" y2="164.1" stroke="#b0b0b0" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrowe)"/>
+<line x1="1308.3" y1="800.5" x2="1447.8" y2="812.0" stroke="#b0b0b0" stroke-width="1.2" stroke-dasharray="2 3" marker-end="url(#arrowe)"/>
+<rect x="705.0" y="712.5" width="230.0" height="95" rx="45" fill="#6b4a1e" stroke="#6b4a1e" stroke-width="2.2"/>
+<text x="820.0" y="758.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#fff">Persepolis</text>
+<text x="820.0" y="775.0" text-anchor="middle" font-size="9.6" fill="#f0e6d6">Archaeological Site · Q129072</text>
+<rect x="742.5" y="241.0" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="820.0" y="268.0" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Cyrus the Great</text>
+<text x="820.0" y="285.0" text-anchor="middle" font-size="9.6" fill="#6b6255">Q8423</text>
+<rect x="901.6" y="267.5" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="979.1" y="294.5" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Darius the Great</text>
+<text x="979.1" y="311.5" text-anchor="middle" font-size="9.6" fill="#6b6255">Q44387</text>
+<rect x="1043.5" y="344.3" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="1121.0" y="371.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Xerxes I</text>
+<text x="1121.0" y="388.3" text-anchor="middle" font-size="9.6" fill="#6b6255">Q129165</text>
+<rect x="1150.4" y="463.0" width="159.6" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="1230.2" y="490.0" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Alexander the Great</text>
+<text x="1230.2" y="507.0" text-anchor="middle" font-size="9.6" fill="#6b6255">Q8409</text>
+<rect x="1217.5" y="610.7" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#8a4dbf" stroke-width="2.2"/>
+<text x="1295.0" y="637.7" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Achaemenid Empire</text>
+<text x="1295.0" y="654.7" text-anchor="middle" font-size="9.6" fill="#6b6255">Q389688</text>
+<rect x="1230.8" y="771.5" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#3d9a5c" stroke-width="2.2"/>
+<text x="1308.3" y="798.5" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">UNESCO</text>
+<text x="1308.3" y="815.5" text-anchor="middle" font-size="9.6" fill="#6b6255">Q7809</text>
+<rect x="1151.1" y="927.8" width="235.2" height="58" rx="10" fill="#fff7ea" stroke="#3d9a5c" stroke-width="2.2"/>
+<text x="1268.7" y="954.8" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Inst. Study Ancient Cultures</text>
+<text x="1268.7" y="971.8" text-anchor="middle" font-size="9.6" fill="#6b6255">Q1276053</text>
+<rect x="1103.0" y="1062.9" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#3d7ab8" stroke-width="2.2"/>
+<text x="1180.5" y="1089.9" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Fars Province</text>
+<text x="1180.5" y="1106.9" text-anchor="middle" font-size="9.6" fill="#6b6255">Q1004666</text>
+<rect x="975.7" y="1161.9" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#3d7ab8" stroke-width="2.2"/>
+<text x="1053.2" y="1188.9" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Marvdasht</text>
+<text x="1053.2" y="1205.9" text-anchor="middle" font-size="9.6" fill="#6b6255">Q604990</text>
+<rect x="823.2" y="1214.3" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#6b4a1e" stroke-width="2.2"/>
+<text x="900.7" y="1241.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Pasargadae</text>
+<text x="900.7" y="1258.3" text-anchor="middle" font-size="9.6" fill="#6b6255">Q230025</text>
+<rect x="661.8" y="1214.3" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#6b4a1e" stroke-width="2.2"/>
+<text x="739.3" y="1241.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Naqsh-e Rustam</text>
+<text x="739.3" y="1258.3" text-anchor="middle" font-size="9.6" fill="#6b6255">Q648705</text>
+<rect x="509.3" y="1161.9" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#e08a2b" stroke-width="2.2"/>
+<text x="586.8" y="1188.9" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Apadana</text>
+<text x="586.8" y="1205.9" text-anchor="middle" font-size="9.6" fill="#6b6255">Q5961812</text>
+<rect x="379.7" y="1062.9" width="159.6" height="58" rx="10" fill="#fff7ea" stroke="#e08a2b" stroke-width="2.2"/>
+<text x="459.5" y="1089.9" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Gate of All Nations</text>
+<text x="459.5" y="1106.9" text-anchor="middle" font-size="9.6" fill="#6b6255">Q5527015</text>
+<rect x="293.8" y="927.8" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#e08a2b" stroke-width="2.2"/>
+<text x="371.3" y="954.8" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Tachara</text>
+<text x="371.3" y="971.8" text-anchor="middle" font-size="9.6" fill="#6b6255">Q6564498</text>
+<rect x="254.2" y="771.5" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#2ba7a0" stroke-width="2.2"/>
+<text x="331.7" y="798.5" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Zoroastrianism</text>
+<text x="331.7" y="815.5" text-anchor="middle" font-size="9.6" fill="#6b6255">Q9601</text>
+<rect x="267.5" y="610.7" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#2ba7a0" stroke-width="2.2"/>
+<text x="345.0" y="637.7" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Old Persian</text>
+<text x="345.0" y="654.7" text-anchor="middle" font-size="9.6" fill="#6b6255">Q35225</text>
+<rect x="300.6" y="463.0" width="218.4" height="58" rx="10" fill="#fff7ea" stroke="#7a6a9a" stroke-width="2.2"/>
+<text x="409.8" y="490.0" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Persepolis Admin. Archives</text>
+<text x="409.8" y="507.0" text-anchor="middle" font-size="9.6" fill="#6b6255">Q3752162</text>
+<rect x="441.5" y="344.3" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="519.0" y="371.3" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Ernst Herzfeld</text>
+<text x="519.0" y="388.3" text-anchor="middle" font-size="9.6" fill="#6b6255">Q62933</text>
+<rect x="583.4" y="267.5" width="155.0" height="58" rx="10" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="660.9" y="294.5" text-anchor="middle" font-size="11.5" font-weight="bold" fill="#2b2620">Erich Schmidt</text>
+<text x="660.9" y="311.5" text-anchor="middle" font-size="9.6" fill="#6b6255">Q71601</text>
+<polygon points="1024.6,122.1 1066.6,164.1 1024.6,206.1 982.6,164.1" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>
+<text x="1024.6" y="161.1" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#4a4a4a">Foundation</text>
+<text x="1024.6" y="176.1" text-anchor="middle" font-size="9.5" fill="#4a4a4a">518 BCE</text>
+<polygon points="1347.4,373.4 1389.4,415.4 1347.4,457.4 1305.4,415.4" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>
+<text x="1347.4" y="412.4" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#4a4a4a">Destruction</text>
+<text x="1347.4" y="427.4" text-anchor="middle" font-size="9.5" fill="#4a4a4a">330 BCE</text>
+<polygon points="615.4,122.1 657.4,164.1 615.4,206.1 573.4,164.1" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>
+<text x="615.4" y="161.1" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#4a4a4a">Excavation</text>
+<text x="615.4" y="176.1" text-anchor="middle" font-size="9.5" fill="#4a4a4a">1931–1939</text>
+<polygon points="1447.8,770.0 1489.8,812.0 1447.8,854.0 1405.8,812.0" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>
+<text x="1447.8" y="809.0" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#4a4a4a">Inscription</text>
+<text x="1447.8" y="824.0" text-anchor="middle" font-size="9.5" fill="#4a4a4a">1979 CE</text>
+<rect x="40" y="1315" width="1570" height="225" fill="#ffffff" stroke="#d8cdb8" rx="8"/>
+<text x="60" y="1339" font-size="13.5" font-weight="bold" fill="#5a3d1a">Legend</text>
+<rect x="58" y="1356" width="18" height="18" rx="4" fill="#fff7ea" stroke="#6b4a1e" stroke-width="2.2"/>
+<text x="84" y="1370" font-size="12" fill="#2b2620">Site</text>
+<rect x="578" y="1356" width="18" height="18" rx="4" fill="#fff7ea" stroke="#c97a3d" stroke-width="2.2"/>
+<text x="604" y="1370" font-size="12" fill="#2b2620">Person</text>
+<rect x="1098" y="1356" width="18" height="18" rx="4" fill="#fff7ea" stroke="#3d7ab8" stroke-width="2.2"/>
+<text x="1124" y="1370" font-size="12" fill="#2b2620">Place</text>
+<rect x="58" y="1384" width="18" height="18" rx="4" fill="#fff7ea" stroke="#3d9a5c" stroke-width="2.2"/>
+<text x="84" y="1398" font-size="12" fill="#2b2620">Organization</text>
+<rect x="578" y="1384" width="18" height="18" rx="4" fill="#fff7ea" stroke="#8a4dbf" stroke-width="2.2"/>
+<text x="604" y="1398" font-size="12" fill="#2b2620">Historical Period</text>
+<rect x="1098" y="1384" width="18" height="18" rx="4" fill="#fff7ea" stroke="#e08a2b" stroke-width="2.2"/>
+<text x="1124" y="1398" font-size="12" fill="#2b2620">Monument / Building</text>
+<rect x="58" y="1412" width="18" height="18" rx="4" fill="#fff7ea" stroke="#2ba7a0" stroke-width="2.2"/>
+<text x="84" y="1426" font-size="12" fill="#2b2620">Concept (religion/language)</text>
+<rect x="578" y="1412" width="18" height="18" rx="4" fill="#fff7ea" stroke="#7a6a9a" stroke-width="2.2"/>
+<text x="604" y="1426" font-size="12" fill="#2b2620">Document archive</text>
+<polygon points="1107,1412 1116,1421 1107,1430 1098,1421" fill="#eeeeee" stroke="#8a8a8a" stroke-width="2"/>
+<text x="1124" y="1426" font-size="12" fill="#2b2620">Event (diamond)</text>
+<rect x="58" y="1448" width="18" height="18" rx="45" fill="#6b4a1e" stroke="#6b4a1e" stroke-width="2.2"/>
+<text x="84" y="1462" font-size="12" fill="#2b2620">Persepolis (central hub — solid fill marks it as the main topic, not a separate type)</text>
+<line x1="60" y1="1483" x2="105" y2="1483" stroke="#5a4530" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="113" y="1487" font-size="12" fill="#2b2620">Solid = direct relationship (involves Persepolis itself)</text>
+<line x1="620" y1="1483" x2="665" y2="1483" stroke="#9a9a9a" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arrowd)"/>
+<text x="673" y="1487" font-size="12" fill="#2b2620">Dashed = secondary relationship (between two other entities)</text>
+<line x1="60" y1="1509" x2="105" y2="1509" stroke="#b0b0b0" stroke-width="1.6" stroke-dasharray="2 3" marker-end="url(#arrowe)"/>
+<text x="113" y="1513" font-size="12" fill="#2b2620">Dotted = event-linking connector (entity → historical event)</text>
+<text x="1150" y="1513" font-size="12" fill="#2b2620">20 entities · 30 relations · 4 events</text>
+</svg>

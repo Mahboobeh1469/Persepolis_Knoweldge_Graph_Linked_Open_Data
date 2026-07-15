@@ -1,0 +1,342 @@
+@prefix crm:     <http://www.cidoc-crm.org/cidoc-crm/current/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix res:     <https://w3id.org/persepolis-project/resource/> .
+@prefix ex:      <https://w3id.org/persepolis-project/ontology#> .
+
+
+# ==================== CONCEPTUAL MODEL (ontology) ====================
+
+crm:E27_Site rdfs:subClassOf crm:E18_Physical_Thing .
+crm:E22_Human-Made_Object rdfs:subClassOf crm:E18_Physical_Thing .
+
+ex:builtBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:creator ;
+    rdfs:label "built by"@en ;
+    rdfs:comment "Original construction. Cardinality 1..1 on the site/monument side in this dataset."@en ;
+    rdfs:domain crm:E18_Physical_Thing ;
+    rdfs:range foaf:Person .
+
+ex:expandedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:contributor ;
+    rdfs:label "expanded by"@en ;
+    rdfs:comment "Later continuation of construction by a successor, distinct from builtBy. Cardinality 0..*."@en ;
+    rdfs:domain crm:E18_Physical_Thing ;
+    rdfs:range foaf:Person .
+
+ex:completedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:contributor ;
+    rdfs:label "completed by"@en ;
+    rdfs:domain crm:E22_Human-Made_Object ;
+    rdfs:range foaf:Person .
+
+ex:destroyedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "destroyed by"@en ;
+    rdfs:domain crm:E18_Physical_Thing ;
+    rdfs:range foaf:Person .
+
+ex:capitalOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "capital of"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range crm:E4_Period .
+
+ex:succeeds a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:replaces ;
+    rdfs:label "succeeds (as capital)"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range crm:E27_Site .
+
+ex:locatedNear a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "located near"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range crm:E27_Site, crm:E53_Place .
+
+ex:recognizes a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "recognizes"@en ;
+    rdfs:comment "Agent-first direction (organization -> site), matching standard RDF practice."@en ;
+    rdfs:domain foaf:Organization ;
+    rdfs:range crm:E27_Site .
+
+ex:foundedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:creator ;
+    rdfs:label "founded by"@en ;
+    rdfs:domain crm:E4_Period ;
+    rdfs:range foaf:Person .
+
+ex:containsTomb a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "contains tomb of"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range foaf:Person .
+
+ex:excavatedBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:contributor ;
+    rdfs:label "excavated by"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range foaf:Person .
+
+ex:succeededExcavationOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:replaces ;
+    rdfs:label "succeeded (as excavation director)"@en ;
+    rdfs:domain foaf:Person ;
+    rdfs:range foaf:Person .
+
+ex:conductedExcavationAt a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "conducted excavation at"@en ;
+    rdfs:domain foaf:Organization ;
+    rdfs:range crm:E27_Site .
+
+ex:associatedWithReligion a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:subject ;
+    rdfs:label "associated with religion"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range skos:Concept .
+
+ex:hasLanguage a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:language ;
+    rdfs:label "has language (of inscriptions)"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range crm:E56_Language .
+
+ex:yieldedArchive a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "yielded archive"@en ;
+    rdfs:domain crm:E27_Site ;
+    rdfs:range crm:E31_Document .
+
+ex:discoveredBy a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:contributor ;
+    rdfs:label "discovered by"@en ;
+    rdfs:domain crm:E31_Document ;
+    rdfs:range foaf:Person .
+
+# dcterms:spatial and dcterms:hasPart are reused directly (no local definition needed)
+
+
+# ==================== ENTITIES (instance data, 20 total) ====================
+
+res:persepolis a crm:E27_Site ;
+    rdfs:label "Persepolis"@en ;
+    dcterms:description "Archaeological site and ceremonial capital of the Achaemenid Empire."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q129072> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Persepolis> .
+
+res:pasargadae a crm:E27_Site ;
+    rdfs:label "Pasargadae"@en ;
+    dcterms:description "First dynastic capital of the Achaemenid Empire, founded by Cyrus the Great."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q230025> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Pasargadae> .
+
+res:naqshe_rustam a crm:E27_Site ;
+    rdfs:label "Naqsh-e Rustam"@en ;
+    dcterms:description "Ancient necropolis near Persepolis containing the rock-cut tombs of Achaemenid kings."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q648705> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Naqsh-e_Rustam> .
+
+res:fars a crm:E53_Place ;
+    rdfs:label "Fars Province"@en ;
+    dcterms:description "Province of southern Iran in which Persepolis is located."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1004666> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Fars_Province> .
+
+res:marvdasht a crm:E53_Place ;
+    rdfs:label "Marvdasht"@en ;
+    dcterms:description "Modern Iranian city near the ruins of Persepolis."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q604990> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Marvdasht> .
+
+res:cyrus a foaf:Person ;
+    rdfs:label "Cyrus the Great"@en ;
+    dcterms:description "Founder of the Achaemenid Empire; built Pasargadae."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q8423> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Cyrus_the_Great> .
+
+res:darius a foaf:Person ;
+    rdfs:label "Darius the Great"@en ;
+    dcterms:description "Achaemenid king who founded Persepolis."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q44387> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Darius_the_Great> .
+
+res:xerxes a foaf:Person ;
+    rdfs:label "Xerxes I"@en ;
+    dcterms:description "Son of Darius; continued and expanded the construction of Persepolis."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q129165> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Xerxes_I> .
+
+res:alexander a foaf:Person ;
+    rdfs:label "Alexander the Great"@en ;
+    dcterms:description "King of Macedon who conquered and burned Persepolis in 330 BCE."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q8409> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Alexander_the_Great> .
+
+res:herzfeld a foaf:Person ;
+    rdfs:label "Ernst Herzfeld"@en ;
+    dcterms:description "German archaeologist who began the systematic excavation of Persepolis in 1931."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q62933> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Ernst_Herzfeld> .
+
+res:schmidt a foaf:Person ;
+    rdfs:label "Erich Schmidt"@en ;
+    dcterms:description "German-American archaeologist who succeeded Herzfeld as excavation director, 1934-1939."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q71601> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Erich_Schmidt_(archaeologist)> .
+
+res:achaemenid a crm:E4_Period ;
+    rdfs:label "Achaemenid Empire"@en ;
+    dcterms:description "Historical Persian empire of which Persepolis was the ceremonial capital."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q389688> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Achaemenid_Empire> .
+
+res:unesco a foaf:Organization ;
+    rdfs:label "UNESCO"@en ;
+    dcterms:description "United Nations agency that inscribed Persepolis on the World Heritage List in 1979."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q7809> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/UNESCO> .
+
+res:isac a foaf:Organization ;
+    rdfs:label "Institute for the Study of Ancient Cultures"@en ;
+    dcterms:description "University of Chicago research institute (formerly the Oriental Institute) that sponsored the 1931-1939 Persepolis excavations."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1276053> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Oriental_Institute_(Chicago)> .
+
+res:apadana a crm:E22_Human-Made_Object ;
+    rdfs:label "Apadana"@en ;
+    dcterms:description "Great audience hall of Persepolis, begun by Darius and completed by Xerxes I."@en ;
+    dcterms:type "Palace / Audience Hall"@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5961812> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Apadana> .
+
+res:gate_of_all_nations a crm:E22_Human-Made_Object ;
+    rdfs:label "Gate of All Nations"@en ;
+    dcterms:description "Monumental entrance hall built by Xerxes I at Persepolis."@en ;
+    dcterms:type "Monumental Gate"@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5527015> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Gate_of_All_Nations> .
+
+res:tachara a crm:E22_Human-Made_Object ;
+    rdfs:label "Tachara"@en ;
+    dcterms:description "Private palace of Darius the Great at Persepolis."@en ;
+    dcterms:type "Palace"@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q6564498> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Tachara> .
+
+res:zoroastrianism a skos:Concept ;
+    rdfs:label "Zoroastrianism"@en ;
+    dcterms:description "Ancient Iranian religion practiced by the Achaemenid kings; its iconography appears throughout Persepolis."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q9601> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Zoroastrianism> .
+
+res:old_persian a crm:E56_Language ;
+    rdfs:label "Old Persian"@en ;
+    dcterms:description "Language of the Achaemenid royal inscriptions found at Persepolis."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q35225> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Old_Persian> .
+
+res:fortification_archive a crm:E31_Document ;
+    rdfs:label "Persepolis Administrative Archives (Fortification Tablets)"@en ;
+    dcterms:description "Clay tablet archive documenting the daily administration of the Achaemenid Empire, discovered at Persepolis by Ernst Herzfeld."@en ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q3752162> .
+
+# ==================== EVENTS (instances of crm:E5_Event) ====================
+
+res:foundation_event a crm:E63_Beginning_of_Existence ;
+    rdfs:label "Foundation of Persepolis"@en ;
+    dcterms:date "-0518" ;
+    crm:P11_had_participant res:darius .
+
+res:destruction_event a crm:E6_Destruction ;
+    rdfs:label "Destruction of Persepolis"@en ;
+    dcterms:date "-0330" ;
+    crm:P11_had_participant res:alexander .
+
+res:excavation_event a crm:E7_Activity ;
+    rdfs:label "Persepolis excavation"@en ;
+    dcterms:date "1931" ;
+    crm:P11_had_participant res:herzfeld ;
+    crm:P11_had_participant res:schmidt ;
+    crm:P11_had_participant res:isac .
+
+res:inscription_event a crm:E5_Event ;
+    rdfs:label "UNESCO World Heritage inscription"@en ;
+    dcterms:date "1979" ;
+    crm:P11_had_participant res:unesco .
+
+# ==================== RELATIONS (from listRelation, 30 total) ====================
+
+res:persepolis ex:builtBy res:darius .
+    # Foundation of Persepolis (-0518)
+
+res:persepolis ex:expandedBy res:xerxes .
+    # Foundation of Persepolis (-0518)
+
+res:persepolis ex:destroyedBy res:alexander .
+    # Destruction of Persepolis (-0330)
+
+res:persepolis ex:capitalOf res:achaemenid .
+
+res:persepolis dcterms:spatial res:fars .
+
+res:persepolis ex:locatedNear res:marvdasht .
+
+res:marvdasht dcterms:spatial res:fars .
+
+res:persepolis dcterms:hasPart res:apadana .
+
+res:persepolis dcterms:hasPart res:gate_of_all_nations .
+
+res:persepolis dcterms:hasPart res:tachara .
+
+res:apadana ex:builtBy res:darius .
+
+res:apadana ex:completedBy res:xerxes .
+
+res:gate_of_all_nations ex:builtBy res:xerxes .
+
+res:tachara ex:builtBy res:darius .
+
+res:unesco ex:recognizes res:persepolis .
+    # UNESCO World Heritage inscription (1979)
+
+res:achaemenid ex:foundedBy res:cyrus .
+
+res:pasargadae ex:builtBy res:cyrus .
+
+res:pasargadae ex:capitalOf res:achaemenid .
+
+res:persepolis ex:succeeds res:pasargadae .
+
+res:naqshe_rustam ex:locatedNear res:persepolis .
+
+res:naqshe_rustam ex:containsTomb res:darius .
+
+res:naqshe_rustam ex:containsTomb res:xerxes .
+
+res:persepolis ex:excavatedBy res:herzfeld .
+    # Persepolis excavation (1931)
+
+res:persepolis ex:excavatedBy res:schmidt .
+    # Persepolis excavation (1931)
+
+res:schmidt ex:succeededExcavationOf res:herzfeld .
+
+res:isac ex:conductedExcavationAt res:persepolis .
+    # Persepolis excavation (1931)
+
+res:persepolis ex:associatedWithReligion res:zoroastrianism .
+
+res:persepolis ex:hasLanguage res:old_persian .
+
+res:persepolis ex:yieldedArchive res:fortification_archive .
+
+res:fortification_archive ex:discoveredBy res:herzfeld .
+    # Persepolis excavation (1931)
