@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presentation website for Persepolis: a Linked Open Data project.">
+  <title>Persepolis · Linked Open Data Project</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="masthead wrap">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 120 80" role="img">
+          <path d="M18 62h84M26 62V32h68v30M34 32V20h52v12M42 20V10h36v10"/>
+          <path d="M30 44h60M39 44v18M50 44v18M61 44v18M72 44v18M83 44v18"/>
+        </svg>
+      </div>
+      <div class="brand-copy">
+        <p class="eyebrow">Digital Humanities · LODLAM</p>
+        <h1>Persepolis</h1>
+        <p>A Linked Open Data project</p>
+      </div>
+      <div class="header-actions">
+        <button class="quiet-button" id="fullscreenButton" type="button">Presentation mode</button>
+        <a class="primary-button" href="report.html" target="_blank" rel="noopener">Open report</a>
+      </div>
+    </div>
+
+    <nav class="tab-shell" aria-label="Project sections">
+      <div class="tab-list wrap" role="tablist">
+        <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
+        <button role="tab" data-tab="entities" aria-selected="false">Entities</button>
+        <button role="tab" data-tab="theoretical" aria-selected="false">Theoretical model</button>
+        <button role="tab" data-tab="conceptual" aria-selected="false">Conceptual model</button>
+        <button role="tab" data-tab="encoding" aria-selected="false">TEI / XML</button>
+        <button role="tab" data-tab="rdf" aria-selected="false">RDF / LOD</button>
+        <button role="tab" data-tab="validation" aria-selected="false">Validation</button>
+        <button role="tab" data-tab="presentation" aria-selected="false">Presentation guide</button>
+        <button role="tab" data-tab="files" aria-selected="false">Files</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap main-shell">
+    <div class="section-progress" aria-live="polite">
+      <span id="progressLabel">Section 1 of 9</span>
+      <span class="progress-line"><span id="progressFill"></span></span>
+    </div>
+
+    <section class="tab-panel is-active" id="overview" role="tabpanel">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="section-kicker">Project idea</p>
+          <h2>From one archaeological site to a connected cultural heritage graph</h2>
+          <p class="lead">The project starts from the Wikipedia page on Persepolis and builds a verified network of rulers, sites, monuments, archaeologists, institutions, concepts, language and documentary evidence.</p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button" data-go="theoretical">See the model</button>
+            <a class="quiet-button" href="output.html" target="_blank" rel="noopener">Open generated HTML</a>
+          </div>
+        </div>
+        <aside class="project-plaque" aria-label="Project statistics">
+          <p class="plaque-label">Dataset summary</p>
+          <dl>
+            <div><dt>20</dt><dd>verified entities</dd></div>
+            <div><dt>30</dt><dd>modelled relations</dd></div>
+            <div><dt>4</dt><dd>historical events</dd></div>
+            <div><dt>241</dt><dd>RDF triples</dd></div>
+          </dl>
+          <p class="plaque-note">All twenty entities are reconciled to Wikidata.</p>
+        </aside>
+      </div>
+
+      <div class="overview-grid">
+        <article class="info-card">
+          <span class="card-number">01</span>
+          <h3>Research focus</h3>
+          <p>How can Persepolis be represented as a network connecting ancient construction, destruction, imperial context, modern excavation and heritage recognition?</p>
+        </article>
+        <article class="info-card">
+          <span class="card-number">02</span>
+          <h3>Method</h3>
+          <p>Entity selection → authority reconciliation → theoretical model → ontology model → TEI/XML → HTML and RDF/Turtle.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-number">03</span>
+          <h3>Core principle</h3>
+          <p>Reuse established vocabularies and derive multiple outputs from one structured XML source so the project remains consistent.</p>
+        </article>
+      </div>
+
+      <div class="workflow-card" aria-label="Project workflow">
+        <div><b>Source</b><span>Wikipedia</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>Model</b><span>20 entities</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>Encode</b><span>TEI/XML</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>Transform</b><span>HTML + RDF</span></div>
+        <i aria-hidden="true">→</i>
+        <div><b>Link</b><span>Wikidata</span></div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="entities" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Entity selection</p><h2>Twenty reconciled entities</h2></div>
+        <p>The selection deliberately goes beyond “site + rulers” to include excavation history, nearby sites, monuments, religion, language and an administrative archive.</p>
+      </header>
+      <div class="entity-controls">
+        <label class="search-box">Search entities<input id="entitySearch" type="search" placeholder="Name or description"></label>
+        <div class="filter-row" id="entityFilters" aria-label="Filter entity types"></div>
+      </div>
+      <div class="entity-grid" id="entityGrid"></div>
+    </section>
+
+    <section class="tab-panel" id="theoretical" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Human-language stage</p><h2>Theoretical model</h2></div>
+        <p>The theoretical model expresses the domain before ontology formalization. It makes the historical meaning of each relation explicit.</p>
+      </header>
+      <div class="diagram-card">
+        <div class="diagram-toolbar">
+          <div><b>Natural-language relationship map</b><span>20 entities · 30 relations · 4 events</span></div>
+          <button class="quiet-button" type="button" data-zoom="theoretical_model.svg" data-title="Theoretical model">View full screen</button>
+        </div>
+        <img src="theoretical_model.svg" alt="Theoretical model diagram for the Persepolis project" loading="lazy">
+      </div>
+      <div class="decision-grid">
+        <article><b>Historical precision</b><p>Alexander <em>destroyed</em> Persepolis; Xerxes <em>expanded</em> it; the site was <em>capital of</em> the Achaemenid Empire.</p></article>
+        <article><b>Direct relations</b><p>18 solid connections directly involve Persepolis, including builders, location, monuments and excavators.</p></article>
+        <article><b>Secondary relations</b><p>12 dashed connections create a richer network between other entities rather than a simple star graph.</p></article>
+        <article><b>Events</b><p>Foundation, destruction, excavation and UNESCO inscription are modelled as separate dated events.</p></article>
+      </div>
+      <div class="relation-table-wrap">
+        <div class="subheading-row"><h3>Key relationships</h3><button class="text-button" id="toggleRelations" type="button">Show all 30</button></div>
+        <table class="relation-table"><thead><tr><th>Subject</th><th>Property</th><th>Object</th><th>Scope</th></tr></thead><tbody id="relationRows"></tbody></table>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="conceptual" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Formal semantic stage</p><h2>Conceptual model and ontology reuse</h2></div>
+        <p>The informal relations are translated into classes, individuals and properties using established Semantic Web vocabularies.</p>
+      </header>
+      <div class="diagram-card">
+        <div class="diagram-toolbar">
+          <div><b>CIDOC-CRM / FOAF instance graph</b><span>Class boxes, individual nodes and typed properties</span></div>
+          <button class="quiet-button" type="button" data-zoom="conceptual_model.svg" data-title="Conceptual model">View full screen</button>
+        </div>
+        <img src="conceptual_model.svg" alt="Conceptual model diagram for the Persepolis project" loading="lazy">
+      </div>
+      <div class="ontology-grid">
+        <article><span>CRM</span><h3>CIDOC-CRM</h3><p>Sites, monuments, places, periods, documents, language and historical events.</p></article>
+        <article><span>FOAF</span><h3>FOAF</h3><p>People and organizations, including rulers, archaeologists, UNESCO and the research institute.</p></article>
+        <article><span>DC</span><h3>Dublin Core Terms</h3><p>Descriptions and general relations such as spatial, hasPart, date, language and creator.</p></article>
+        <article><span>SKOS</span><h3>SKOS</h3><p>Zoroastrianism is represented as a controlled concept.</p></article>
+        <article><span>OWL</span><h3>OWL / RDFS</h3><p>Identity links, labels and nineteen narrow project properties defined as subproperties of existing terms.</p></article>
+      </div>
+      <aside class="callout"><b>Why reuse?</b><p>Reusing established ontologies improves interoperability and keeps the project-specific vocabulary small, explicit and easier to justify.</p></aside>
+    </section>
+
+    <section class="tab-panel" id="encoding" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Structured source</p><h2>TEI/XML encoding and HTML transformation</h2></div>
+        <p>One TEI/XML file stores the narrative, entity catalogue, events, authority identifiers and all thirty relations.</p>
+      </header>
+      <div class="split-grid">
+        <article class="process-card">
+          <span class="process-tag">Source</span>
+          <h3><code>data.xml</code></h3>
+          <p>Entities are described once in the <code>&lt;standOff&gt;</code> section and referenced from the running text through <code>@ref</code>.</p>
+          <pre><code>&lt;place xml:id="persepolis"&gt;
+  &lt;placeName&gt;Persepolis&lt;/placeName&gt;
+  &lt;idno type="wikidata"&gt;...Q129072&lt;/idno&gt;
+&lt;/place&gt;</code></pre>
+          <a class="text-link" href="data.xml" target="_blank">Open TEI/XML</a>
+        </article>
+        <article class="process-card">
+          <span class="process-tag">Transformation</span>
+          <h3><code>style.xsl</code> + <code>transform.py</code></h3>
+          <p>XSLT rules transform machine-friendly XML into a readable webpage with highlighted entities, entity tables and the full relationship table.</p>
+          <pre><code>data.xml
+   ↓ XSLT with lxml
+output.html</code></pre>
+          <a class="text-link" href="output.html" target="_blank">Open generated HTML</a>
+        </article>
+      </div>
+      <div class="single-source-note"><b>Consistency advantage</b><span>The diagrams, RDF and HTML all reflect the same relations encoded in the TEI source.</span></div>
+    </section>
+
+    <section class="tab-panel" id="rdf" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Machine-readable output</p><h2>RDF, Turtle and Linked Open Data</h2></div>
+        <p>The Python generator reads the TEI source and creates a Turtle knowledge graph with ontology declarations, entity resources, events and relations.</p>
+      </header>
+      <div class="rdf-layout">
+        <article class="triple-card">
+          <p class="triple-label">Example RDF statement</p>
+          <div class="triple-line"><span>Persepolis</span><strong>builtBy</strong><span>Darius the Great</span></div>
+          <div class="triple-roles"><span>Subject</span><span>Predicate</span><span>Object</span></div>
+          <pre><code>res:persepolis ex:builtBy res:darius .
+res:persepolis ex:destroyedBy res:alexander .
+res:unesco ex:recognizes res:persepolis .</code></pre>
+        </article>
+        <aside class="rdf-facts">
+          <div><b>RDF</b><span>The graph data model</span></div>
+          <div><b>Turtle</b><span>A compact RDF serialization</span></div>
+          <div><b>URI</b><span>A unique identifier for a resource</span></div>
+          <div><b><code>owl:sameAs</code></b><span>Connects each local entity to Wikidata</span></div>
+        </aside>
+      </div>
+      <div class="stat-strip">
+        <div><b>241</b><span>total triples</span></div>
+        <div><b>24</b><span>entity + event resources</span></div>
+        <div><b>30</b><span>relation triples</span></div>
+        <div><b>20</b><span>Wikidata alignments</span></div>
+      </div>
+      <div class="action-row">
+        <a class="primary-button" href="knowledge_graph.ttl" target="_blank">Open Turtle dataset</a>
+        <a class="quiet-button" href="generate_rdf.py" target="_blank">Open generator script</a>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="validation" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Quality control</p><h2>Validation and consistency</h2></div>
+        <p>The project checks not only syntax, but also historical accuracy and agreement between its different outputs.</p>
+      </header>
+      <div class="checklist">
+        <article><span>✓</span><div><b>20 entities in every layer</b><p>Entity catalogue, TEI standOff and RDF dataset agree.</p></div></article>
+        <article><span>✓</span><div><b>Authority reconciliation</b><p>Each entity has a verified Wikidata QID; Wikipedia links are included where available.</p></div></article>
+        <article><span>✓</span><div><b>30 relations stay synchronized</b><p>Theoretical model, conceptual model, XML listRelation and RDF predicates match.</p></div></article>
+        <article><span>✓</span><div><b>Historically sensitive predicates</b><p><code>destroyedBy</code>, <code>expandedBy</code> and <code>capitalOf</code> prevent misleading claims.</p></div></article>
+        <article><span>✓</span><div><b>XML and HTML validation</b><p>The files were parsed successfully with lxml.</p></div></article>
+        <article><span>✓</span><div><b>Turtle structure checked</b><p>Prefixes resolve and every statement is correctly terminated.</p></div></article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="presentation" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Speaking order</p><h2>A simple presentation route</h2></div>
+        <p>Use the website as a visual guide; explain the modelling choices rather than reading the page.</p>
+      </header>
+      <ol class="presentation-steps">
+        <li><span>1</span><div><b>Idea</b><p>Why Persepolis is a strong central node for a cultural heritage graph.</p></div></li>
+        <li><span>2</span><div><b>Entity selection</b><p>Twenty entities, expanded beyond rulers to include excavation and documentary context.</p></div></li>
+        <li><span>3</span><div><b>Theoretical model</b><p>Explain two or three historically important arrows.</p></div></li>
+        <li><span>4</span><div><b>Conceptual model</b><p>Show how the domain becomes classes, instances and typed properties.</p></div></li>
+        <li><span>5</span><div><b>Ontology choices</b><p>State exactly what CIDOC-CRM, FOAF, DCTERMS, SKOS and OWL contribute.</p></div></li>
+        <li><span>6</span><div><b>TEI workflow</b><p>One structured source generates the human and machine-readable outputs.</p></div></li>
+        <li><span>7</span><div><b>RDF example</b><p>Read one subject–predicate–object statement and explain the URIs.</p></div></li>
+        <li><span>8</span><div><b>Conclusion</b><p>Emphasize interoperability, authority links and consistency.</p></div></li>
+      </ol>
+      <div class="qa-grid">
+        <article><h3>Why CIDOC-CRM?</h3><p>It is designed for cultural heritage and can represent sites, objects, places, events and periods.</p></article>
+        <article><h3>Why custom properties?</h3><p>Only narrow relations were added, and each is anchored as a subproperty of an existing DCTERMS property.</p></article>
+        <article><h3>RDF vs Turtle?</h3><p>RDF is the graph model; Turtle is one syntax used to write it.</p></article>
+        <article><h3>Theoretical vs conceptual?</h3><p>The theoretical model expresses domain meaning; the conceptual model formalizes it with ontologies.</p></article>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="files" role="tabpanel" hidden>
+      <header class="section-heading">
+        <div><p class="section-kicker">Project package</p><h2>Files used in the workflow</h2></div>
+        <p>Every file remains available from the offline presentation website.</p>
+      </header>
+      <div class="file-grid">
+        <a href="report.html" target="_blank"><b>report.html</b><span>Full project write-up</span></a>
+        <a href="data.xml" target="_blank"><b>data.xml</b><span>TEI/XML source</span></a>
+        <a href="style.xsl" target="_blank"><b>style.xsl</b><span>XML → HTML rules</span></a>
+        <a href="output.html" target="_blank"><b>output.html</b><span>Generated human-readable page</span></a>
+        <a href="transform.py" target="_blank"><b>transform.py</b><span>Runs the XSLT transformation</span></a>
+        <a href="generate_rdf.py" target="_blank"><b>generate_rdf.py</b><span>Generates Turtle from TEI</span></a>
+        <a href="knowledge_graph.ttl" target="_blank"><b>knowledge_graph.ttl</b><span>RDF/Turtle dataset</span></a>
+        <a href="theoretical_model.svg" target="_blank"><b>theoretical_model.svg</b><span>Informal model diagram</span></a>
+        <a href="conceptual_model.svg" target="_blank"><b>conceptual_model.svg</b><span>Formal ontology diagram</span></a>
+        <a href="README.md" target="_blank"><b>README.md</b><span>Project instructions</span></a>
+      </div>
+    </section>
+
+    <div class="panel-navigation">
+      <button class="quiet-button" id="previousButton" type="button">← Previous</button>
+      <button class="primary-button" id="nextButton" type="button">Next →</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>Persepolis · Linked Open Data Project</span><span>DHDK · University of Bologna · 2025–2026</span></div>
+  </footer>
+
+  <dialog id="diagramDialog" class="diagram-dialog">
+    <div class="dialog-bar"><b id="dialogTitle">Diagram</b><button type="button" id="closeDialog" aria-label="Close">×</button></div>
+    <div class="dialog-canvas"><img id="dialogImage" alt=""></div>
+  </dialog>
+</body>
+</html>
